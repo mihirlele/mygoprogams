@@ -8,9 +8,9 @@ import (
 func main() {
 
 	space := " "
-	var s, value string
+	var s string
 	for i := 1; i < len(os.Args); i++ {
-		s += space + value
+		s += space + os.Args[i]
 
 	}
 	fmt.Println(s)
